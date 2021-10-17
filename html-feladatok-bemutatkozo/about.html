@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/75ebbea8f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <a 
+            class="logo"
+            href="./index.html">
+                <img src="./img/kardosgergely-sm-sqooshed.jpg" alt="Kardos Gergely logo">
+        </a>
+    <nav id="navigation">
+        <ul class="menu">
+            <li class="menu-item"><a href="./index.html">Home</a></li>
+            <li class="menu-item"><a href="./works.html">Works</a></li>
+            <li class="menu-item"><a href="./gallery.html">Gallery</a></li>
+            <li class="menu-item"><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main class="container">
+        <img id="foto" src="./img/Geri.png" alt="Kardos Gergely">
+        <header><h1>Részletes bemutatkozás</h1></header>
+        <p>Gyerekkorom óta segítem a családot és ismerősöket az IT problémáikban, aztán elvégeztem egy gépész szakot, de az első munkahelyem által visszatértem az IT területre, csak már idegennyelven nyújtottam távoli IT támogatást. A főnökeim hamar észre vették az IT affinitásomat és önállóságomat, így hamar kaptam extra feladatokat és fejlődési lehetőségeket is, amik által mindig előrébb léphettem a karrier létrán. Munka mellett, szabadidőmben szintén képeztem magam más IT területeken is mint a munkahelyen, míg egyszer úgy döntöttem, hogy szabadúszóként teszem próbára magam.
+            Nap mint nap fedezek fel új online eszközöket, technikákat, és ahol lehet regisztrálni, ott már valószínűleg regisztráltam, kipróbáltam és megtanultam, hogy kell használni. Tech érdeklődésem a kütyükre is kiterjed, szeretek Kínából is kacatokat rendelni, már akkor is rendelgettem, amikor a legtöbben itthon még tartózkodtak a netes vásárlástól. Ismerkedem a 3D modellezéssel, animálással, videó és hangszerkesztéssel, tanultam PHP-t, jQuery-t, Javascript-et, prezentálási technikákat, üzleti pszichológiát és még sok mást.
+        </p>
+        
+</main>
+<section id="lists">
+    <h3>Hobbik</h3>
+        <ul>
+            <li>Főzés</li>
+            <li>Kertészkedés</li>
+            <li>Barkácsolás</li>
+        </ul>
+        <h3>Beszélt nyelvek</h3>
+        <ol>
+            <li>magyar</li>
+            <li>német</li>
+            <li>angol</li>
+        </ol>
+</section>
+<section>
+        <div class="form-container">
+            <fieldset>
+                <legend>Küldj üzenetet:</legend>
+            <form id="contactform">
+                
+                    <label for="fname">Név:</label><br>
+                    <input type="text" id="fname" name="fname" min="5" required><br>
+                    <label for="email">E-mail cím:</label><br>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+                    <label for="message">Üzenet:</label><br>
+            </form>
+            <textarea form="contactform" minlength="20"></textarea>
+            <input type="submit" value="Küldés">
+        </fieldset>
+        </div>
+    </section>
+    <footer><a id="uptotop" href="#header"><button type="button">Back to top!</button></a></footer>
+
+    
+</body>
+</html>
