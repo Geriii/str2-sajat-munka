@@ -149,3 +149,18 @@ h1{
 .main__card--red:hover{ 
     background-color: rgb(219, 110, 121);
 }
+/*Responsive*/
+@media screen and (max-width: 700px) {
+    main{
+        grid-template-columns: 100px auto;
+    }
+    .main__cards{
+    grid-template-columns: auto;
+    }
+    .nav__section, .nav__menuitem{
+        visibility: hidden;
+    }
+    .nav__menuitem i{
+        visibility: visible;
+    }
+  }
