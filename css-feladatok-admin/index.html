@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header--dark">
+        <div class="header__title">
+            <h3 class="header__title">
+                Admin page
+            </h3>
+        </div>
+        <div class="header__menuoperator"><i class="fa fa-bars"></i></div>
+        <div class="header__search">
+            <input type="text" class="search__input" placeholder="Search for...">
+            <button class="search__btn"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="header__account fa"><i class="fa fa-user"></i></div>
+    </header>
+    <main>
+        <aside>
+            <nav class="main__nav">
+               <ul class="nav__ul">
+                   <li class="nav__section">Core</li>
+                   <li class="nav__menuitem nav__menuitem--active"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</li>
+                   <li class="nav__section">Interface</li>
+                   <li class="nav__menuitem nav__submenu"><i class="fa fa-windows" aria-hidden="true"></i> Layouts</li>
+                   <li class="nav__menuitem nav__submenu"><i class="fa fa-bookmark" aria-hidden="true"></i> Pages</li>
+                   <li class="nav__section">Addons</li>
+                   <li class="nav__menuitem"><i class="fa fa-area-chart" aria-hidden="true"></i> Charts</li>
+                   <li class="nav__menuitem"><i class="fa fa-table" aria-hidden="true"></i> Tables</li>
+               </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1>Dashboard</h1>
+            <div class="main__breadcrumb">
+                Dashboard
+            </div>
+            <div class="main__cards">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">Primary Card</div>
+                    <div class="card__bottom">View Details</div>
+                </div>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">Warning Card</div>
+                    <div class="card__bottom">View Details</div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">Success Card</div>
+                    <div class="card__bottom">View Details</div>
+                </div>
+                <div class="main__card main__card--red">
+                    <div class="card__top">Danger Card</div>
+                    <div class="card__bottom">View Details</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
