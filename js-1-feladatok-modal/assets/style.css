@@ -5,15 +5,15 @@
     top: 0;
     left: 0;
     background-color: rgba(26, 26, 26, 0.9);
-    display: none;
-    /* visibility: hidden;
+    /* display: none; */
+    visibility: hidden;
     opacity: 0;
-    transition: visibility 1.5s, opacity 2s linear; */
+    transition: visibility 0.5s, opacity 0.5s linear;
 }
-/* .container--visible{
+.container--visible{
     visibility: visible;
     opacity: 1;
-} */
+}
 .container__modal{
     width: 100%;
     padding: 10px 20px;
@@ -54,6 +54,10 @@
     border-radius: 3px;
     display: inline-block;
     margin: 5px;
+    cursor: pointer;
+}
+.fa-times{
+    cursor: pointer;
 }
 .btn-ok{
     background-color: #2FCC71 ;
