@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <main>
+        <div id="tictactoe">
+            <div class="tictactoe__board">
+                <div data-cell="0" data-row="0" class="cell"></div>
+                <div data-cell="1" data-row="0" class="cell"></div>
+                <div data-cell="2" data-row="0" class="cell"></div>
+                <div data-cell="0" data-row="1" class="cell"></div>
+                <div data-cell="1" data-row="1" class="cell"></div>
+                <div data-cell="2" data-row="1" class="cell"></div>
+                <div data-cell="0" data-row="2" class="cell"></div>
+                <div data-cell="1" data-row="2" class="cell"></div>
+                <div data-cell="2" data-row="2" class="cell"></div>
+            </div>
+            <div class="message">Let's play.</div>
+            <!--
+            <div class="tictactoe__messages">
+                <div class="tictactoe__player"><span class="tictactoe__player__span"></span>player's turn.</div>
+                <div class="tictactoe__winner" style="display: none;">Congratulation! Player <span
+                        class="tictactoe__winner__span"></span> won the game!</div>
+                <div class="tictactoe__draw" style="display: none;">Match end. There is no more space on the table.</div>
+            </div>-->
+            <div class="tictactoe__buttons">
+                <button class="startbutton" onclick="tictactoe.clear()">New game</button>
+            </div>
+        </div>
+        <div id="resultstable">
+            <h2>Results</h2>
+            <div class="player1">Player X:</div>
+            <div class="player2">Player O:</div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+<script type="text/javascript" src="assets/main.js"></script>
+
+</html>
