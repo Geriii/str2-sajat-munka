@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Cyberverse;  
+  src: url('../font/Cyberverse.otf');
+}
+
+body{
+  background-color: black;
+}
+#clock{
+  color: aqua;
+  font-family: Cyberverse;
+  font-size: 34px;
+}
