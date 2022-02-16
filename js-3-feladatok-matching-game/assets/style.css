@@ -1,0 +1,134 @@
+#card-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.rows{  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  
+}
+
+.card{
+  border: 1px solid black;  
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+  background-color: transparent;
+  background-clip: content-box;
+  transform-style: preserve-3d;  
+  margin:0.75rem;
+  width: 6.57rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+  transition: transform 0.5s ease-in-out; 
+  cursor: pointer;
+}
+
+.card--back,
+.card--front
+{
+  position: absolute;
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  cursor: initial;  
+}
+.card--back{  
+  background-image: url('/assets/img/cardback.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+
+.card--front{
+  transform: rotateY(180deg);
+  font-size: 4.5rem;
+  background-color: #67A2CE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(80, 80, 80);
+  /* color:rgb(204, 88, 42); */
+}
+.card-content{
+  min-height: 100px;
+}
+.cpt-america{
+  background-image: url('/assets/img/cpt-america.webp');
+}
+
+.card--clicked,
+.card--flipped
+{
+  transform: rotateY(180deg);
+  cursor: default;
+}
+
+.card--disabled{
+  cursor: default;
+}
+
+/* ///////////////////////////////////////////////// */
+
+
+hr {
+  margin: 0.1em;
+}
+
+
+.game__area {
+  margin: 20px;
+  padding: 20px;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game__board {
+   display: flex;
+   flex-direction: column;
+   height: fit-content;
+   margin-top: 20px;
+}
+
+[class$='row'] {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  height: 250px;
+  width: 150px;
+  font-size: 2.25rem;
+  margin: 0.5rem;
+  position: relative;
+  background-color: transparent;
+  perspective: 100px;
+  transition: all 0.5s;
+  transform-style: preserve-3d;
+
+}
+
+.card-up, .card-down {
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+ position: absolute;
+ backface-visibility: hidden;
+}
+
+
+
+.card-up {
+  transform: rotateY(180deg);
+}
+
+
+.results {
+  position: absolute;
+}
