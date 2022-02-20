@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+  <title>CRUD app</title>
+</head>
+<body>
+  <div id="form">
+    <label for="name">Name</label>
+    <input id="name" name="name">
+    <label for="emailAddress">Email</label>
+    <input id="emailAddress" name="emailAddress">
+    <label for="Address">Address</label>
+    <input id="Address" name="Address">
+    <button id="createUserButton"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+</div>   
+
+<table id="usersTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script type="module" src="assets/js/main.js"></script>
+  <script src="assets/js/userCreate.js"></script>
+  <script src="assets/js/userEdit.js"></script>
+  <script src="assets/js/validator.js"></script>
+</body>
+</html>
